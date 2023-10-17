@@ -3,7 +3,7 @@
   #about section:nth-child(2) p:nth-of-type(2) {
     align-self: center;
     margin-top: 2rem;
-    color: var(--color-secondary);
+    //color: var(--color-secondary);
     font-size: 1.5em;
     font-weight: var(--font-weight-strong);
     text-align: center; }
@@ -17,7 +17,7 @@
     #about section:nth-child(2) ul li {
       margin: 0.25em;
       padding: 0.25em 0.5em;
-      background-color: var(--color-light); }
+      //background-color: var(--color-light); }
   #about section:nth-child(2)::before {
     position: absolute;
     top: 60%;
@@ -34,3 +34,4 @@
     @media (max-width: 35rem) {
       #about section:nth-child(2)::before {
         transform: scale(2) translate(-25%, -25%); } }
+      }
