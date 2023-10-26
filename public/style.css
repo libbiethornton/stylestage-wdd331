@@ -59,3 +59,16 @@ select {
 body {
   background: linear-gradient(#386641 0%, #6A994E 14%, #A7C957 28%, #F2E8CF 42%, #D7988C 66%, #CA706B 80%, #BC4749 94%);
 }
+
+nav li {
+  position: relative;
+  list-style: none;
+}
+nav a {
+  text-decoration: none;
+}
+nav ul::before {
+  content: url(../sass/winter-socks.svg);
+}
+
+/*# sourceMappingURL=style.css.map */
