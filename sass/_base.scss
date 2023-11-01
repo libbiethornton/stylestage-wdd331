@@ -1,3 +1,33 @@
 body {
     background: linear-gradient($color-darkgreen 0%, $color-mediumgreen 14%, $color-lightgreen 28%, $color-cream 42%, $color-lightred 66%, $color-mediumred 80%, $color-darkred 94%)
 }
+
+
+h1, h2{ 
+    text-align:center; 
+}
+.link-github svg{
+    width: 100px; 
+}
+
+/* Large View */
+
+@media screen and (min-width: 800px ){
+    #about{
+        display:grid; 
+        grid-template-columns: 1fr 1fr;
+    }
+       
+    #about section:nth-child(2){
+        grid-column: 2/3; 
+    }
+
+    #files{
+        display:flex; 
+        float:right; 
+        background-color:green; 
+    }
+    .profile .container{
+    background-color: blue;
+    }
+}

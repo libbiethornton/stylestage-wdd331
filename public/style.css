@@ -60,15 +60,32 @@ body {
   background: linear-gradient(#386641 0%, #6A994E 14%, #A7C957 28%, #F2E8CF 42%, #D7988C 66%, #CA706B 80%, #BC4749 94%);
 }
 
-nav li {
-  position: relative;
-  list-style: none;
-}
-nav a {
-  text-decoration: none;
-}
-nav ul::before {
-  content: url(../sass/winter-socks.svg);
+h1, h2 {
+  text-align: center;
 }
 
-/*# sourceMappingURL=style.css.map */
+.link-github svg {
+  width: 100px;
+}
+
+/* Large View */
+@media screen and (min-width: 800px) {
+  #about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #about section:nth-child(2) {
+    grid-column: 2/3;
+  }
+
+  #files {
+    display: flex;
+    float: right;
+    background-color: green;
+  }
+
+  .profile .container {
+    background-color: blue;
+  }
+}
