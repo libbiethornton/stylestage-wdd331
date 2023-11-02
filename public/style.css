@@ -61,7 +61,7 @@ select {
   }
 }
 body {
-  background: linear-gradient(#386641 0%, #6A994E 14%, #A7C957 28%, #F2E8CF 42%, #D7988C 66%, #CA706B 80%, #BC4749 94%);
+  background: linear-gradient(#BC4749 0%, #CA706B 14%, #D7988C 28%, #F2E8CF 42%, #A7C957 66%, #6A994E 80%, #386641 94%);
 }
 
 h1, h2 {
