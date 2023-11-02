@@ -9,7 +9,8 @@ h1, h2{
 
 
 
-// header styling
+// header styling //
+//------------------------------------//
 header .container{
     padding-top: 40px;
     display:grid;
@@ -35,7 +36,9 @@ header .container{
         color: $color-lightgreen;
     }
 }
-// the github star
+
+// the github star//
+//------------------------------------//
 .link-github {
     display: grid;
     grid-template-rows:.5fr 20px 20px;
@@ -52,26 +55,23 @@ header .container{
         transform: translate(-10vw)
     }
     
-    
 }
 
+// christmas tree under github star //
+//------------------------------------//
 .link-github span::after{
     display: inline-flex;
-        content: '';
-        grid-row: 2/3;
-
-        /* Using the background-image and
-           its related properties to add
-           the SVG content */
-        background-image: url('../sass/christmas-tree-2.svg');
-        background-size: 28vw 28vw;
-        height: 28vw;
-        width: 28vw;
+    content: '';
+    grid-row: 2/3;
+    background-image: url('../sass/christmas-tree-2.svg');
+    background-size: 28vw 28vw;
+    height: 28vw;
+    width: 28vw;
 }
 
-// nav bar 
+// nav bar//
+//------------------------------------// 
 nav{
-    
     ul{
         display: flex;
         margin-left: 5vw;
@@ -95,8 +95,11 @@ nav{
         padding:15px;
     }
 }
-/* Large View */
 
+
+
+/* Large View */
+//------------------------------------//
 @media screen and (min-width: 800px ){
     #about{
         display:grid; 

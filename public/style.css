@@ -113,9 +113,6 @@ header .container a {
   display: inline-flex;
   content: "";
   grid-row: 2/3;
-  /* Using the background-image and
-     its related properties to add
-     the SVG content */
   background-image: url("../sass/christmas-tree-2.svg");
   background-size: 28vw 28vw;
   height: 28vw;
