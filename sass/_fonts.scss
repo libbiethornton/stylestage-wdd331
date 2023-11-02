@@ -1,1 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&display=swap');
+$font-great-vibes: 'Great Vibes';
+
+h1{
+    font-family: $font-great-vibes;
+}
