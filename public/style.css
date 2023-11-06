@@ -114,7 +114,6 @@ article .container, .page-footer .container, #styles .container {
 }
 
 #styles .features li, .features.patterned li {
-  background-color: pink;
   background-image: url("https://cdn.pixabay.com/photo/2018/11/22/22/46/christmas-paper-3832978_1280.jpg");
 }
 
