@@ -1,11 +1,12 @@
 .page-footer:before {
-    content: url('tree.svg');
+    background-image: url('stylestage-wdd331/tree.svg');
 }
 
-footer {
+.page-footer {
     border: 3px solid black;
     color: $color-cream;
     text-align: center;
+    font-family: 'Playfair Display', serif;
     ul li {
         list-style-type: none;
     }
@@ -19,10 +20,11 @@ footer {
 }
 
 .link-twittercontact, .link-github, .link-rss, .link-support {
-    background-color: $color-lightgreen;
+    background-color: $color-mediumred;
     padding: 1.2em;
     text-decoration: none;
     color: $color-darkgreen;
+    box-shadow: 5px 5px 0px $color-cream;
     &:hover {
         color: $color-lightred;
         background-color: $color-darkred;

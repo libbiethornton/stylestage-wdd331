@@ -90,30 +90,32 @@ h1, h2 {
   }
 }
 .page-footer:before {
-  content: url("tree.svg");
+  background-image: url("stylestage-wdd331/tree.svg");
 }
 
-footer {
+.page-footer {
   border: 3px solid black;
   color: #F2E8CF;
   text-align: center;
+  font-family: "Playfair Display", serif;
 }
-footer ul li {
+.page-footer ul li {
   list-style-type: none;
 }
-footer a {
+.page-footer a {
   text-decoration: none;
   color: #F2E8CF;
 }
-footer a:hover {
+.page-footer a:hover {
   color: #D7988C;
 }
 
 .link-twittercontact, .link-github, .link-rss, .link-support {
-  background-color: #A7C957;
+  background-color: #CA706B;
   padding: 1.2em;
   text-decoration: none;
   color: #386641;
+  box-shadow: 5px 5px 0px #F2E8CF;
 }
 .link-twittercontact:hover, .link-github:hover, .link-rss:hover, .link-support:hover {
   color: #D7988C;
