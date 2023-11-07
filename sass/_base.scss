@@ -1,17 +1,119 @@
 body {
-    background: linear-gradient($color-darkgreen 0%, $color-mediumgreen 14%, $color-lightgreen 28%, $color-cream 42%, $color-lightred 66%, $color-mediumred 80%, $color-darkred 94%)
+    background: linear-gradient($color-darkred 0%, $color-mediumred 14%, $color-lightred 28%, $color-cream 42%, $color-lightgreen 66%, $color-mediumgreen 80%, $color-darkgreen 94%)
 }
 
 
 h1, h2{ 
     text-align:center; 
 }
-.link-github svg{
-    width: 100px; 
+
+//Skip link styling
+
+.skip-link{
+    text-decoration: none;
+    color:$color-lightgreen;
+    text-align: center;
+    position: absolute;
+    top:2vw;
+    left:47vw;
+    font-size: 12px;
+    text-transform: lowercase;
+    
 }
 
-/* Large View */
+// header styling //
+//------------------------------------//
+header .container{
+    padding-top: 40px;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    color: $color-cream;
+    h1{
+        font-size: 15vw;
+    }
+    
+    h2{
+        grid-column: 1/3;
+        font-size: 2.4vw;
+    }
+    p{
+        text-align: center;
+        grid-column: 1/3;
+        font-size: 1.5vw;
+    }
+    a{
+        grid-row: 1/3;
+        grid-column: 2/3;
+        text-decoration: none;
+        color: $color-lightgreen;
+        font-size: 1.5vw;
+    }
+}
 
+// the github star//
+//------------------------------------//
+.link-github {
+    display: grid;
+    grid-template-rows:.5fr 20px 20px;
+    margin-left: 1vw;
+    margin-top: 2vw;
+
+    svg{
+        fill:$color-cream;
+        width: 7vw; 
+        transform: translate(10.5vw, 3vw);
+    }
+    span{
+        display: inline-grid;
+        transform: translate(-10vw)
+    }
+    
+}
+
+// christmas tree under github star //
+//------------------------------------//
+.link-github span::after{
+    display: inline-flex;
+    content: '';
+    grid-row: 2/3;
+    background-image: url('../sass/christmas-tree-2.svg');
+    background-size: 28vw 28vw;
+    height: 28vw;
+    width: 28vw;
+}
+
+// nav bar//
+//------------------------------------// 
+nav{
+    ul{
+        display: flex;
+        margin-left: 5vw;
+        background-color:$color-darkred;
+        justify-content: space-evenly;
+        max-width: 90vw;
+    }
+    li{
+        position: relative;
+        list-style: none;
+        padding:.5em;
+    }
+    a{
+        text-decoration: none;
+        color:$color-cream;
+
+    }
+
+    a:hover{
+        background-color: $color-darkred;
+        padding:15px;
+    }
+}
+
+
+
+/* Large View */
+//------------------------------------//
 @media screen and (min-width: 800px ){
     #about{
         display:grid; 
