@@ -171,6 +171,51 @@ nav a:hover {
     background-color: blue;
   }
 }
+.page-footer:before {
+  background-image: url("stylestage-wdd331/tree.svg");
+}
+
+.page-footer {
+  border: 3px solid black;
+  color: #F2E8CF;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+}
+.page-footer ul li {
+  list-style-type: none;
+}
+.page-footer a {
+  text-decoration: none;
+  color: #F2E8CF;
+}
+.page-footer a:hover {
+  color: #D7988C;
+}
+
+.link-twittercontact, .link-github, .link-rss, .link-support {
+  background-color: #CA706B;
+  padding: 1.2em;
+  text-decoration: none;
+  color: #386641;
+  box-shadow: 5px 5px 0px #F2E8CF;
+}
+.link-twittercontact:hover, .link-github:hover, .link-rss:hover, .link-support:hover {
+  color: #D7988C;
+  background-color: #BC4749;
+}
+
+.page-footer ul {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.page-footer svg {
+  width: 1.5em;
+  padding-right: 0.5em;
+  color: #386641;
+=======
 
 /*# sourceMappingURL=style.css.map */
 #styles {
