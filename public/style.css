@@ -57,7 +57,7 @@ select {
   }
 }
 body {
-  background: linear-gradient(#386641 0%, #6A994E 14%, #A7C957 28%, #F2E8CF 42%, #D7988C 66%, #CA706B 80%, #BC4749 94%);
+  background: linear-gradient(#BC4749 0%, #CA706B 14%, #D7988C 28%, #F2E8CF 42%, #A7C957 66%, #6A994E 80%, #386641 94%);
 }
 
 h1, h2 {
@@ -88,4 +88,47 @@ h1, h2 {
   .profile .container {
     background-color: blue;
   }
+}
+.page-footer:before {
+  content: url("tree.svg");
+}
+
+footer {
+  border: 3px solid black;
+  color: #F2E8CF;
+  text-align: center;
+}
+footer ul li {
+  list-style-type: none;
+}
+footer a {
+  text-decoration: none;
+  color: #F2E8CF;
+}
+footer a:hover {
+  color: #D7988C;
+}
+
+.link-twittercontact, .link-github, .link-rss, .link-support {
+  background-color: #A7C957;
+  padding: 1.2em;
+  text-decoration: none;
+  color: #386641;
+}
+.link-twittercontact:hover, .link-github:hover, .link-rss:hover, .link-support:hover {
+  color: #D7988C;
+  background-color: #BC4749;
+}
+
+.page-footer ul {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.page-footer svg {
+  width: 1.5em;
+  padding-right: 0.5em;
+  color: #386641;
 }
