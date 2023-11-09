@@ -6,6 +6,10 @@ body {
 h1, h2{ 
     text-align:center; 
 }
+p{
+    font-family: 'Playfair Display', serif;
+    // make sure ths is working 
+}
 .link-github svg{
     width: 100px; 
 }
@@ -25,9 +29,6 @@ h1, h2{
     #files{
         display:flex; 
         float:right; 
-        background-color:green; 
-    }
-    .profile .container{
-    background-color: blue;
     }
 }
+    
