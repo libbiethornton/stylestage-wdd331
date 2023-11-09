@@ -7,6 +7,14 @@ h1, h2{
     text-align:center; 
 }
 
+p{
+    font-family: 'Playfair Display', serif;
+    // make sure ths is working 
+}
+.link-github svg{
+    width: 100px; 
+
+
 //Skip link styling
 
 .skip-link{
@@ -19,6 +27,7 @@ h1, h2{
     font-size: 12px;
     text-transform: lowercase;
     
+
 }
 
 // header styling //
@@ -127,9 +136,6 @@ nav{
     #files{
         display:flex; 
         float:right; 
-        background-color:green; 
-    }
-    .profile .container{
-    background-color: blue;
     }
 }
+    
