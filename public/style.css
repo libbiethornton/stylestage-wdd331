@@ -114,22 +114,35 @@ header .container a {
   font-size: 1.5vw;
 }
 
-.link-github {
+header .link-github {
   display: grid;
   grid-template-rows: 0.5fr 20px 20px;
   margin-left: 1vw;
   margin-top: 2vw;
 }
-.link-github svg {
+header .link-github svg {
   fill: #F2E8CF;
   width: 7vw;
   transform: translate(10.5vw, 3vw);
 }
-.link-github span {
+header .link-github svg:hover {
+  animation: christmas 3s infinite;
+}
+header .link-github span {
   display: inline-grid;
   transform: translate(-10vw);
 }
 
+@keyframes christmas {
+  0% {
+    fill: gold;
+    fill-opacity: 50%;
+  }
+  50% {
+    fill: gold;
+    fill-opacity: 100%;
+  }
+}
 .link-github span::after {
   display: inline-flex;
   content: "";
@@ -484,14 +497,14 @@ article .container, .page-footer .container, #styles .container {
   color: #D7988C;
 }
 
-.link-twittercontact, .link-github, .link-rss, .link-support {
+.link-twittercontact, footer .link-github, .link-rss, .link-support {
   background-color: #CA706B;
   padding: 1.2em;
   text-decoration: none;
   color: #386641;
   box-shadow: 5px 5px 0px #F2E8CF;
 }
-.link-twittercontact:hover, .link-github:hover, .link-rss:hover, .link-support:hover {
+.link-twittercontact:hover, footer .link-github:hover, .link-rss:hover, .link-support:hover {
   color: #D7988C;
   background-color: #BC4749;
 }
