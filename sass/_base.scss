@@ -60,24 +60,44 @@ header .container{
     }
 }
 
-// the github star//
+// the header github star (christmas tree star)//
 //------------------------------------//
-.link-github {
+header .link-github {
     display: grid;
     grid-template-rows:.5fr 20px 20px;
     margin-left: 1vw;
     margin-top: 2vw;
 
+  
+
     svg{
         fill:$color-cream;
         width: 7vw; 
         transform: translate(10.5vw, 3vw);
+
+        &:hover{
+            animation: christmas 3s infinite;
+        }
     }
     span{
         display: inline-grid;
         transform: translate(-10vw)
     }
     
+}
+
+@keyframes christmas{
+    0%{
+        fill: gold;
+        fill-opacity: 100%;
+    }
+    25%{
+        fill: cornsilk;
+    }
+    50%{
+        fill: gold;
+        fill-opacity: 100%;
+    }
 }
 
 // christmas tree under github star //
