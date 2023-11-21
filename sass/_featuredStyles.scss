@@ -1,3 +1,5 @@
+@import "colors";
+
 #styles{
    margin: 5vh 0 20vh;
    text-align: center;
@@ -5,7 +7,7 @@
 #styles h2{
     font-family: 'Great Vibes', cursive;
     font-size: 4.2rem;
-    color: white;
+    color: $color-cream;
 }
 
 article .container, .page-footer .container, #styles .container {
@@ -47,12 +49,12 @@ article .container, .page-footer .container, #styles .container {
     place-content: center;
     min-height: 12rem;
     padding: 1rem;
-    color: white;
+    color: $color-cream;
     text-align: center;
 }
 
 .features li > span a {
-    color: white;
+    color: $color-cream;
     font-size: 1.3rem;
     font-weight: bold;
     text-decoration: none;
@@ -67,7 +69,7 @@ article .container, .page-footer .container, #styles .container {
 }
 .link-allstyles{
     background-color:#386641;
-    color: #F2E8CF;
+    color: $color-cream;
     box-shadow: 0.18em 0.18em #F2E8CF;
     padding: 20px;
     font-size: 1.125rem;
