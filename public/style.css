@@ -204,7 +204,7 @@ nav a:hover {
   color: #F2E8CF;
 }
 
-article .container, .page-footer .container, #styles .container {
+article .container, #styles .container {
   width: 100%;
   max-width: 80ch;
   margin-right: auto;
@@ -257,7 +257,7 @@ article .container, .page-footer .container, #styles .container {
   text-decoration: none;
 }
 
-.page-footer ul, .features {
+.features {
   display: grid;
   margin: 0 0 2rem;
   padding: 0;
@@ -481,14 +481,16 @@ article .container, .page-footer .container, #styles .container {
     padding-top: 40px;
   }
 }
-#styles::before {
+.page-footer::before {
+  display: block;
   content: "";
-  background-image: url("/tree.svg");
+  background-image: url("/tree-footer.svg");
+  width: 1700px;
+  height: 150px;
 }
 
 .page-footer {
-  border: 3px solid black;
-  color: #F2E8CF;
+  color: #386641;
   text-align: center;
   font-family: "Playfair Display", serif;
 }
@@ -497,10 +499,10 @@ article .container, .page-footer .container, #styles .container {
 }
 .page-footer a {
   text-decoration: none;
-  color: #F2E8CF;
+  color: #D7988C;
 }
 .page-footer a:hover {
-  color: #D7988C;
+  color: #BC4749;
 }
 
 .link-twittercontact, footer .link-github, .link-rss, .link-support {
@@ -516,18 +518,33 @@ article .container, .page-footer .container, #styles .container {
 }
 
 .page-footer ul {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 3em;
-  margin-bottom: 3em;
+  display: block;
 }
 
-.page-footer svg {
+.page-footer ul li {
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+
+.page-footer .link-github svg {
   width: 1.5em;
   padding-right: 0.5em;
-  color: #386641;
+  fill: #A7C957;
 }
 
+.page-footer .container {
+  background-color: #F2E8CF;
+  padding: 1.5em;
+}
+
+@media screen and (min-width: 920px) {
+  .page-footer ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+}
 #styles {
   margin: 5vh 0 20vh;
   text-align: center;
@@ -539,7 +556,7 @@ article .container, .page-footer .container, #styles .container {
   color: #F2E8CF;
 }
 
-article .container, .page-footer .container, #styles .container {
+article .container, #styles .container {
   width: 100%;
   max-width: 80ch;
   margin-right: auto;
@@ -592,7 +609,7 @@ article .container, .page-footer .container, #styles .container {
   text-decoration: none;
 }
 
-.page-footer ul, .features {
+.features {
   display: grid;
   margin: 0 0 2rem;
   padding: 0;
