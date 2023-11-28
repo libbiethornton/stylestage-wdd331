@@ -1,6 +1,3 @@
-
-
-=======
 @import "colors.scss";
 
 
@@ -15,7 +12,7 @@
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
     a{ color:$color-darkred; 
         &:hover{
-            color:$color-darkgreen;
+            color:$color-lightgreen;
             text-shadow: 2px 2px 8px $color-darkgreen;
         }
     }
@@ -67,18 +64,19 @@
     color: $color-cream;
 }
 
-.container ul{
+.profile .container ul {
     display:flex; 
     flex-direction: row;
     list-style-type: none;
     color: $color-cream;
     font-size: 1.3rem;
     font-weight: bold;
+    flex-wrap: wrap;
     a{
         text-decoration: none; 
         color:$color-darkred; 
         &:hover{
-            color:$color-darkgreen;
+            color:$color-lightgreen;
             text-shadow: 2px 2px 8px $color-darkgreen;
         }
     }

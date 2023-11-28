@@ -1,5 +1,6 @@
-.page-footer:before {
-    background-image: url('stylestage-wdd331/tree.svg');
+#styles::before {
+    content: ''; 
+    background-image: url('/tree.svg');
 }
 
 .page-footer {

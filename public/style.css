@@ -136,7 +136,10 @@ header .link-github span {
 @keyframes christmas {
   0% {
     fill: gold;
-    fill-opacity: 50%;
+    fill-opacity: 100%;
+  }
+  25% {
+    fill: cornsilk;
   }
   50% {
     fill: gold;
@@ -271,8 +274,9 @@ article .container, .page-footer .container, #styles .container {
   text-decoration: none;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 800px) {
   .features {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
@@ -300,7 +304,7 @@ article .container, .page-footer .container, #styles .container {
   color: #BC4749;
 }
 #contribute a:hover {
-  color: #386641;
+  color: #A7C957;
   text-shadow: 2px 2px 8px #386641;
 }
 #contribute:hover {
@@ -343,20 +347,21 @@ article .container, .page-footer .container, #styles .container {
   color: #F2E8CF;
 }
 
-.container ul {
+.profile .container ul {
   display: flex;
   flex-direction: row;
   list-style-type: none;
   color: #F2E8CF;
   font-size: 1.3rem;
   font-weight: bold;
+  flex-wrap: wrap;
 }
-.container ul a {
+.profile .container ul a {
   text-decoration: none;
   color: #BC4749;
 }
-.container ul a:hover {
-  color: #386641;
+.profile .container ul a:hover {
+  color: #A7C957;
   text-shadow: 2px 2px 8px #386641;
 }
 
@@ -476,8 +481,9 @@ article .container, .page-footer .container, #styles .container {
     padding-top: 40px;
   }
 }
-.page-footer:before {
-  background-image: url("stylestage-wdd331/tree.svg");
+#styles::before {
+  content: "";
+  background-image: url("/tree.svg");
 }
 
 .page-footer {
@@ -603,8 +609,9 @@ article .container, .page-footer .container, #styles .container {
   text-decoration: none;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 800px) {
   .features {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
