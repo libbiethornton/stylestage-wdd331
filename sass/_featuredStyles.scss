@@ -10,7 +10,7 @@
     color: $color-cream;
 }
 
-article .container, .page-footer .container, #styles .container {
+article .container, #styles .container {
     width: 100%;
     max-width: 80ch;
     margin-right: auto;
@@ -60,7 +60,7 @@ article .container, .page-footer .container, #styles .container {
     text-decoration: none;
 }
 
-.page-footer ul, .features {
+.features {
     display: grid;
     margin: 0 0 2rem;
     padding: 0;
