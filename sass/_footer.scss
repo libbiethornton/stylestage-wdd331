@@ -1,10 +1,14 @@
-.page-footer:before {
-    background-image: url('stylestage-wdd331/tree.svg');
+.page-footer::before {
+    display: block;
+    content: '';
+    background-image: url('/tree-footer.svg');
+    width: 1700px;
+    height: 150px;
+
 }
 
 .page-footer {
-    border: 3px solid black;
-    color: $color-cream;
+    color: $color-darkgreen;
     text-align: center;
     font-family: 'Playfair Display', serif;
     ul li {
@@ -12,10 +16,10 @@
     }
     a {
         text-decoration: none;
-        color: $color-cream;
+        color: $color-lightred;
     }
     a:hover {
-        color: $color-lightred;
+        color: $color-darkred;
     }
 }
 
@@ -31,15 +35,31 @@
     }
 }
 
-.page-footer ul {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 3em;
-    margin-bottom: 3em;
+.page-footer ul{
+    display: block;
 }
 
-.page-footer svg {
+.page-footer ul li{
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+.page-footer .link-github svg {
     width: 1.5em;
     padding-right: .5em;
-    color: $color-darkgreen;
+    fill: $color-lightgreen;
 }
+
+.page-footer .container{
+    background-color: $color-cream;
+    padding: 1.5em;
+}
+
+@media screen and (min-width: 920px ){
+    .page-footer ul{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+ }
