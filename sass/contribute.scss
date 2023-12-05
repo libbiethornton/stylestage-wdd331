@@ -86,6 +86,10 @@
     &:active::after{
         background: transparent;
     }
+
+    &:hover:before {
+        opacity: 1;
+    }
 }
 
 

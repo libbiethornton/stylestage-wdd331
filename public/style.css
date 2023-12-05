@@ -374,6 +374,9 @@ article .container, #styles .container {
 .link-guidelines:active::after {
   background: transparent;
 }
+.link-guidelines:hover:before {
+  opacity: 1;
+}
 
 #guidelines h2, #contribute h2 {
   font-family: "Great Vibes", cursive;
