@@ -600,25 +600,8 @@ article .container, #styles .container {
   color: #BC4749;
 }
 
-.link-twittercontact, footer .link-github, .link-rss, .link-support {
-  background-color: #CA706B;
-  padding: 1.2em;
-  text-decoration: none;
-  color: #386641;
-  box-shadow: 5px 5px 0px #F2E8CF;
-}
-.link-twittercontact:hover, footer .link-github:hover, .link-rss:hover, .link-support:hover {
-  color: #D7988C;
-  background-color: #BC4749;
-}
-
 .page-footer ul {
   display: block;
-}
-
-.page-footer ul li {
-  margin-top: 3em;
-  margin-bottom: 2em;
 }
 
 .page-footer .link-github svg {
@@ -632,6 +615,60 @@ article .container, #styles .container {
   padding: 1.5em;
 }
 
+.page-footer ul li a {
+  background-color: #CA706B;
+  padding: 1.2em;
+  box-shadow: 0.18em 0.18em 2px #A7C957;
+  text-decoration: none;
+  color: #F2E8CF;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+}
+.page-footer ul li a:hover {
+  color: #A7C957;
+}
+.page-footer ul li a:before {
+  content: "";
+  background: linear-gradient(45deg, #386641, #6A994E, #A7C957, #F2E8CF, #386641, #6A994E, #A7C957, #F2E8CF);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.page-footer ul li a::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #BC4749;
+  left: 0;
+  top: 0;
+}
+
+.page-footer ul li a:hover:before {
+  opacity: 1;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
 @media screen and (min-width: 920px) {
   .page-footer ul {
     display: flex;
@@ -769,6 +806,21 @@ article .container, #styles .container {
   background-image: url("ornament2.svg");
   width: 600px;
   height: 700px;
+  animation: spin 10s linear infinite;
+}
+@keyframes spin {
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 #about section:nth-child(1) a {
   color: #A7C957;
