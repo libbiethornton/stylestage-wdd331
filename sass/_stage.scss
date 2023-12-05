@@ -1,0 +1,113 @@
+#about {
+    h2 {
+        font-family: 'Great Vibes', cursive;
+        font-size: 4em;
+    }
+
+    p {
+        font-family: 'Playfair Display', serif;
+        
+    }
+
+    .container {
+        margin-top: 2em;
+        color: $color-mediumgreen;
+        background-color: $color-cream;
+        p {
+            padding: 1em;
+        }
+    }
+
+    /* Setting the Stage Section */
+
+    section:nth-child(1) {
+        h2 {
+            background-color: $color-darkred;
+            color: $color-lightgreen;
+            padding-top: 10px;
+        }
+
+        &::after {
+            display: block;
+            content: '';
+            background-image: url('ornament2.svg');
+            width: 600px;
+            height: 700px;
+        }
+        
+        a {
+            color: $color-lightgreen;
+            text-decoration: none;
+            &:hover {
+                color: $color-darkgreen;
+            }
+        }
+    }
+
+    /* Modern CSS Section */
+
+    section:nth-child(2) {
+        h2 {
+            background-color: $color-cream;
+            color: $color-darkred;
+            padding: 15px;
+        }
+
+        p{
+            background-color: $color-darkred;
+            color: $color-cream;
+            margin-bottom: 2em;
+            width: 100%;
+        }
+
+        li:nth-child(odd) {
+            background-color: $color-darkred;
+            color: $color-cream;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 50px;
+            width: 100%;
+            list-style-type: none;
+        }
+
+        li:nth-child(even) {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: $color-darkred;
+            list-style-type: none;
+            padding-left: 50px;
+        }
+
+        ul{
+            padding: 0;
+        }
+        a {
+            color: $color-lightgreen;
+            text-decoration: none;
+            &:hover {
+                color: $color-lightred;
+            }
+        }
+
+        
+    }
+
+
+}
+
+
+
+nav::after{
+    display: block;
+    content: '';
+    background-image: url('stockings.svg');
+    width: 1663px;
+    height: 256px;
+}
+
+
+@media screen and (min-width: 920px ){
+    #about section:nth-child(1) {
+        height: 650px;
+    }
+ }
