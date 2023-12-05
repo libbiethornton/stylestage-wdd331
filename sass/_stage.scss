@@ -33,6 +33,26 @@
             background-image: url('ornament2.svg');
             width: 600px;
             height: 700px;
+            animation: spin 10s linear infinite;
+        }
+
+        @keyframes spin {
+
+            25% {
+                transform: rotate(90deg);
+            }
+
+            50% {
+                transform: rotate(180deg);
+            }
+
+            75% {
+                transform: rotate(270deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
         }
         
         a {
