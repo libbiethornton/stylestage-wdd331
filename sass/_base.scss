@@ -43,7 +43,12 @@ header .container{
     justify-content: center;
     color: $color-cream;
     h1{
+        font-family: 'Great Vibes';
         font-size: 15vw;
+        width:5ch;
+        margin-left: 20vw;
+        margin-top: 7vw;
+        line-height: 15vw;
     }
     
     h2{
@@ -61,6 +66,7 @@ header .container{
         text-decoration: none;
         color: $color-lightgreen;
         font-size: 1.5vw;
+        width: 100px;
     }
 }
 
@@ -71,7 +77,6 @@ header .link-github {
     grid-template-rows:.5fr 20px 20px;
     margin-left: 1vw;
     margin-top: 2vw;
-
   
 
     svg{
@@ -85,7 +90,7 @@ header .link-github {
     }
     span{
         display: inline-grid;
-        transform: translate(-10vw)
+        transform: translate(-10vw);
     }
     
 }
@@ -119,12 +124,19 @@ header .link-github {
 // nav bar//
 //------------------------------------// 
 nav{
+    
     ul{
+        border-radius: 10px;
         display: flex;
         margin-left: 5vw;
+        margin-bottom: 5vw;
         background-color:$color-darkred;
         justify-content: space-evenly;
         max-width: 90vw;
+        box-shadow: 2px 1px 2px rgba(255, 255, 255, 0.5), 
+              2px 2px 4px rgba(225, 255, 255, 0.5), 
+              2px 4px 8px rgba(237, 255, 255, 0.5), 
+              2px 8px 16px rgba(255, 255, 255, 0.5);
     }
     li{
         position: relative;
@@ -137,9 +149,16 @@ nav{
 
     }
 
-    a:hover{
-        background-color: $color-darkred;
-        padding:15px;
+    
+    li:hover{
+        background-color: $color-cream;
+        color: $color-darkred;
+        border-radius: 10px;
+        a{
+            background-color: $color-cream;
+            color: $color-darkred;
+        }
+
     }
 }
 

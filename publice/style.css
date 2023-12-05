@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&display=swap");
+h1 {
+  font-family: "Great Vibes";
+}
+
 /*
  * [Modified] Modern CSS Reset
  * @link https://github.com/hankchizljaw/modern-css-reset
@@ -60,12 +64,12 @@ body {
   background: linear-gradient(#BC4749 0%, #CA706B 14%, #D7988C 28%, #F2E8CF 42%, #A7C957 66%, #6A994E 80%, #386641 94%);
 }
 
-p, a, li {
-  font: "Playfair Display", sans-serif;
-}
-
 h1, h2 {
   text-align: center;
+}
+
+p {
+  font-family: "Playfair Display", serif;
 }
 
 .link-github svg {
@@ -91,7 +95,6 @@ header .container {
   color: #F2E8CF;
 }
 header .container h1 {
-  font-family: "Great Vibes";
   font-size: 15vw;
   width: 5ch;
   margin-left: 20vw;
@@ -193,11 +196,9 @@ nav li:hover a {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-
   #about section:nth-child(2) {
     grid-column: 2/3;
   }
-
   #files {
     display: flex;
     float: right;
@@ -289,15 +290,12 @@ article .container, #styles .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-
   #styles .features li, .features.patterned li {
     grid-column: 1;
   }
-
   #styles .features li:nth-child(2), .features.patterned li:nth-child(2) {
     grid-column: 2;
   }
-
   #styles .features li:nth-child(3), .features.patterned li:nth-child(3) {
     grid-column: 3;
   }
@@ -317,17 +315,8 @@ article .container, #styles .container {
   color: #F2E8CF;
   box-shadow: inset 800px 0 0 0 #386641;
 }
-#contribute ol {
-  padding-bottom: 8rem;
-}
 #contribute ol li {
-  margin: 0;
-  padding: 16px 0 0px 54px;
-  list-style: none;
-  background-image: url("/ornament.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: 40px;
+  background-size: cover;
 }
 
 .link-guidelines {
@@ -367,12 +356,6 @@ article .container, #styles .container {
   animation: glowing 20s linear infinite;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
-}
-.link-guidelines:active {
-  color: #bda5a5;
-}
-.link-guidelines:active::after {
-  background: transparent;
 }
 
 #guidelines h2, #contribute h2 {
@@ -531,7 +514,6 @@ article .container, #styles .container {
   #contribute:hover {
     box-shadow: inset 200rem 0 0 0 #386641;
   }
-
   #files {
     padding-top: 200px;
     width: 30rem;
@@ -540,14 +522,12 @@ article .container, #styles .container {
     font-size: 2rem;
     font-family: "Great Vibes", cursive;
   }
-
   .profile .container {
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='34' height='34' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform=''%3E%3Crect width='100%25' height='100%25' fill='rgba(56, 102, 65,1)'/%3E%3Cpath d='M-10 30h60v6h-60zM-10-10h60v6h-60' fill='rgba(188, 71, 73,1)'/%3E%3Cpath d='M-10 24h60v3h-60zM-10-16h60v3h-60z' fill='rgba(106, 153, 78,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
     box-shadow: 5px 10px 20px black;
     width: 50rem;
     margin-left: 100px;
   }
-
   #files {
     background: url("/present4.png ");
     box-shadow: 5px 10px 20px black;
@@ -558,7 +538,6 @@ article .container, #styles .container {
   #files a {
     color: #F2E8CF;
   }
-
   #files .container {
     width: 500px;
     height: 200px;
@@ -723,105 +702,15 @@ article .container, #styles .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-
   #styles .features li, .features.patterned li {
     grid-column: 1;
   }
-
   #styles .features li:nth-child(2), .features.patterned li:nth-child(2) {
     grid-column: 2;
   }
-
   #styles .features li:nth-child(3), .features.patterned li:nth-child(3) {
     grid-column: 3;
   }
 }
-#about {
-  /* Setting the Stage Section */
-  /* Modern CSS Section */
-}
-#about h2 {
-  font-family: "Great Vibes", cursive;
-  font-size: 4em;
-}
-#about p {
-  font-family: "Playfair Display", serif;
-}
-#about .container {
-  margin-top: 2em;
-  color: #6A994E;
-  background-color: #F2E8CF;
-}
-#about .container p {
-  padding: 1em;
-}
-#about section:nth-child(1) h2 {
-  background-color: #BC4749;
-  color: #A7C957;
-  padding-top: 10px;
-}
-#about section:nth-child(1)::after {
-  display: block;
-  content: "";
-  background-image: url("ornament2.svg");
-  width: 600px;
-  height: 700px;
-}
-#about section:nth-child(1) a {
-  color: #A7C957;
-  text-decoration: none;
-}
-#about section:nth-child(1) a:hover {
-  color: #386641;
-}
-#about section:nth-child(2) h2 {
-  background-color: #F2E8CF;
-  color: #BC4749;
-  padding: 15px;
-}
-#about section:nth-child(2) p {
-  background-color: #BC4749;
-  color: #F2E8CF;
-  margin-bottom: 2em;
-  width: 100%;
-}
-#about section:nth-child(2) li:nth-child(odd) {
-  background-color: #BC4749;
-  color: #F2E8CF;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 50px;
-  width: 100%;
-  list-style-type: none;
-}
-#about section:nth-child(2) li:nth-child(even) {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: #BC4749;
-  list-style-type: none;
-  padding-left: 50px;
-}
-#about section:nth-child(2) ul {
-  padding: 0;
-}
-#about section:nth-child(2) a {
-  color: #A7C957;
-  text-decoration: none;
-}
-#about section:nth-child(2) a:hover {
-  color: #D7988C;
-}
 
-nav::after {
-  display: block;
-  content: "";
-  background-image: url("stockings.svg");
-  width: 1663px;
-  height: 256px;
-}
-
-@media screen and (min-width: 920px) {
-  #about section:nth-child(1) {
-    height: 650px;
-  }
-}
+/*# sourceMappingURL=style.css.map */
