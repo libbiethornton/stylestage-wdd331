@@ -1,5 +1,9 @@
 body {
-    background: linear-gradient($color-darkred 0%, $color-mediumred 14%, $color-lightred 28%, $color-cream 42%, $color-lightgreen 66%, $color-mediumgreen 80%, $color-darkgreen 94%)
+    background: linear-gradient($color-darkred 0%, $color-mediumred 14%, $color-lightred 28%, $color-cream 42%, $color-lightgreen 66%, $color-mediumgreen 80%, $color-darkgreen 94%);
+    
+}
+p, a, li{
+    font: $body-font; 
 }
 
 
@@ -7,10 +11,10 @@ h1, h2{
     text-align:center; 
 }
 
-p{
-    font-family: 'Playfair Display', serif;
-    // make sure ths is working 
-}
+// p{
+//     font-family: 'Playfair Display', serif;
+//     // make sure ths is working 
+// }
 .link-github svg{
     width: 100px; 
 

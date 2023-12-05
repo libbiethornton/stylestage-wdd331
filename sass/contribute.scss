@@ -20,9 +20,25 @@
     }
    
     ol{
+        padding-bottom:8rem;
         li{
-        // list-style-image: url("https://img.freepik.com/premium-vector/black-chrismas-ball-icon-isolated-white-background-vector-illustration_736051-271.jpg?w=826"); 
-        background-size: cover;
+            margin: 0;
+	padding: 16px 0 0px 54px;
+	list-style: none;
+	background-image: url("/ornament.svg");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 40px;
+        //     list-style-type: none;
+        //     padding-bottom: 10px;
+        //      &:before{
+        //     content: '';
+        //     display: inline-block;
+        //     height: 50px;
+        //     width: 50px;
+        //     background-image: url("/ornament.svg");
+        //     background-repeat: no-repeat;
+        // }
     }}
 }
 .link-guidelines{

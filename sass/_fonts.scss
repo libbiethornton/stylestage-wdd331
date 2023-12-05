@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&display=swap');
-$font-great-vibes: 'Great Vibes';
+$font-great-vibes: 'Great Vibes', cursive;
+$body-font: 'Playfair Display', sans-serif;
+$header-font: 'Great Vibes', cursive;
 
-h1{
-    font-family: $font-great-vibes;
-}
+// h1, h2, h3, h4{
+//     font-family: $header-font;
+// }
+
+// p, a, li{
+//     font-family: $body-font; 
+// }
