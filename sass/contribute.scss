@@ -120,6 +120,9 @@
     font-size: 1.3rem;
     font-weight: bold;
     flex-wrap: wrap;
+        li{
+            margin-right:20px;
+        }
     a{
         text-decoration: none; 
         color:$color-darkred; 

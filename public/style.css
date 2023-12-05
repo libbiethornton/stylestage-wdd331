@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&display=swap");
-h1 {
-  font-family: "Great Vibes";
-}
-
 /*
  * [Modified] Modern CSS Reset
  * @link https://github.com/hankchizljaw/modern-css-reset
@@ -64,12 +60,12 @@ body {
   background: linear-gradient(#BC4749 0%, #CA706B 14%, #D7988C 28%, #F2E8CF 42%, #A7C957 66%, #6A994E 80%, #386641 94%);
 }
 
-h1, h2 {
-  text-align: center;
+p, a, li {
+  font: "Playfair Display", sans-serif;
 }
 
-p {
-  font-family: "Playfair Display", serif;
+h1, h2 {
+  text-align: center;
 }
 
 .link-github svg {
@@ -307,8 +303,17 @@ article .container, #styles .container {
   color: #F2E8CF;
   box-shadow: inset 800px 0 0 0 #386641;
 }
+#contribute ol {
+  padding-bottom: 8rem;
+}
 #contribute ol li {
-  background-size: cover;
+  margin: 0;
+  padding: 16px 0 0px 54px;
+  list-style: none;
+  background-image: url("/ornament.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 40px;
 }
 
 #guidelines h2, #contribute h2 {
@@ -383,6 +388,9 @@ article .container, #styles .container {
   font-size: 1.3rem;
   font-weight: bold;
   flex-wrap: wrap;
+}
+.profile .container ul li {
+  margin-right: 20px;
 }
 .profile .container ul a {
   text-decoration: none;

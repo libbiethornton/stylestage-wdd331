@@ -13,8 +13,17 @@
   color: #F2E8CF;
   box-shadow: inset 800px 0 0 0 #386641;
 }
+#contribute ol {
+  padding-bottom: 8rem;
+}
 #contribute ol li {
-  background-size: cover;
+  margin: 0;
+  padding: 16px 0 0px 54px;
+  list-style: none;
+  background-image: url("/ornament.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 40px;
 }
 
 #guidelines h2, #contribute h2 {
@@ -89,6 +98,9 @@
   font-size: 1.3rem;
   font-weight: bold;
   flex-wrap: wrap;
+}
+.profile .container ul li {
+  margin-right: 20px;
 }
 .profile .container ul a {
   text-decoration: none;
