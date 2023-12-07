@@ -463,6 +463,20 @@ article .container, #styles .container {
     padding-top: 40px;
   }
 }
+@media screen and (min-width: 800px) and (max-width: 380px) {
+  #guidelines .container {
+    background-color: #BC4749;
+  }
+
+  #contribute .container {
+    background-color: #386641;
+  }
+
+  #guidlines, #contribute p {
+    margin: 10px;
+    font-size: 0.9rem;
+  }
+}
 .page-footer::before {
   display: block;
   content: "";
@@ -933,5 +947,9 @@ header .link-github span {
 
   .skip-link {
     font-size: 0.7rem;
+  }
+
+  header .container p, header .container a {
+    font-size: 0.6rem;
   }
 }

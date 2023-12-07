@@ -298,4 +298,18 @@
                 }
             }
         }
+
+        @media screen and (max-width: 380px ){
+            #guidelines .container{
+                background-color: $color-darkred;  
+            }
+            #contribute .container{
+                background-color: $color-darkgreen;
+            }
+
+            #guidlines, #contribute p{
+                margin: 10px;
+                font-size: .9rem;
+            }
+        }
 }
