@@ -123,16 +123,25 @@ header .link-github {
 
 @keyframes christmas{
     0%{
-        fill: gold;
+        fill: white;
         fill-opacity: 100%;
     }
     25%{
-        fill: cornsilk;
+        fill: gold;
+        opacity: 100%;
     }
     50%{
+        fill: white;
+    }
+    75%{
         fill: gold;
+        opacity: 100%;
+    }
+    100%{
+        fill: white;
         fill-opacity: 100%;
     }
+
 }
 
 // christmas tree under github star //
@@ -147,7 +156,7 @@ header .link-github {
     width: 28vw;
 }
 
-
+// large view //
 @media screen and (min-width: 800px ){
 
     header .container h2{
@@ -165,20 +174,20 @@ header .link-github {
 // -- tiny screen view --//
 @media screen and (max-width: 389px ){
     header .container h2{
-        font-size: .9rem;
-}
-
-nav{
-    li{
-        font-size: .8rem;
+    font-size: .9rem;
     }
-    ul{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
 
-.skip-link{
-    font-size: .7rem;
-}
+    nav{
+        li{
+            font-size: .8rem;
+        }
+        ul{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    .skip-link{
+        font-size: .7rem;
+    }
 }

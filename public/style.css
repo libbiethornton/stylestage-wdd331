@@ -868,14 +868,22 @@ header .link-github span {
 
 @keyframes christmas {
   0% {
-    fill: gold;
+    fill: white;
     fill-opacity: 100%;
   }
   25% {
-    fill: cornsilk;
+    fill: gold;
+    opacity: 100%;
   }
   50% {
+    fill: white;
+  }
+  75% {
     fill: gold;
+    opacity: 100%;
+  }
+  100% {
+    fill: white;
     fill-opacity: 100%;
   }
 }
