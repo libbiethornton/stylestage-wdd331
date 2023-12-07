@@ -808,9 +808,15 @@ article .container, #styles .container {
   display: block;
   content: "";
   background-image: url("ornament2.svg");
-  width: 600px;
-  height: 700px;
+  width: 300px;
+  height: 350px;
   animation: spin 10s linear infinite;
+}
+@media screen and (min-width: 920px) {
+  #about section:nth-child(1)::after {
+    width: 600px;
+    height: 700px;
+  }
 }
 @keyframes spin {
   25% {
@@ -875,8 +881,14 @@ nav::after {
   display: block;
   content: "";
   background-image: url("stockings.svg");
-  width: 1663px;
-  height: 256px;
+  width: 831px;
+  height: 128px;
+}
+@media screen and (min-width: 920px) {
+  nav::after {
+    width: 1663px;
+    height: 256px;
+  }
 }
 
 @media screen and (min-width: 920px) {
