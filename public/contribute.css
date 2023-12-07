@@ -96,6 +96,7 @@
 }
 #guidelines h3::after {
   content: " woah, text gradients!!!";
+  display: block;
   font-size: 0.9em;
   transform: translate(5em, 2em) rotate(10deg);
 }
@@ -145,6 +146,9 @@
   font-size: 1.3rem;
   font-weight: bold;
   flex-wrap: wrap;
+}
+.profile .container ul li {
+  margin-right: 20px;
 }
 .profile .container ul a {
   text-decoration: none;
