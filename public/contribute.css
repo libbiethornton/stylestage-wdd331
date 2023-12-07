@@ -70,6 +70,9 @@
 .link-guidelines:active::after {
   background: transparent;
 }
+.link-guidelines:hover:before {
+  opacity: 1;
+}
 
 #guidelines h2, #contribute h2 {
   font-family: "Great Vibes", cursive;
@@ -93,7 +96,6 @@
 }
 #guidelines h3::after {
   content: " woah, text gradients!!!";
-  display: block;
   font-size: 0.9em;
   transform: translate(5em, 2em) rotate(10deg);
 }
@@ -270,5 +272,19 @@
   }
   #files .container a:nth-child(2) {
     padding-top: 40px;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 380px) {
+  #guidelines .container {
+    background-color: #BC4749;
+  }
+
+  #contribute .container {
+    background-color: #386641;
+  }
+
+  #guidlines, #contribute p {
+    margin: 10px;
+    font-size: 0.9rem;
   }
 }

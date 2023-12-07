@@ -86,6 +86,10 @@
     &:active::after{
         background: transparent;
     }
+
+    &:hover:before {
+        opacity: 1;
+    }
 }
 
 
@@ -113,7 +117,6 @@
     }
     h3::after{
         content:" woah, text gradients!!!";
-        display: block;
         font-size: .9em;
         transform: translate(5em,2em)rotate(10deg);
     }
@@ -293,6 +296,20 @@
                 &:nth-child(2){
                     padding-top: 40px;
                 }
+            }
+        }
+
+        @media screen and (max-width: 380px ){
+            #guidelines .container{
+                background-color: $color-darkred;  
+            }
+            #contribute .container{
+                background-color: $color-darkgreen;
+            }
+
+            #guidlines, #contribute p{
+                margin: 10px;
+                font-size: .9rem;
             }
         }
 }
