@@ -96,7 +96,6 @@
 }
 #guidelines h3::after {
   content: " woah, text gradients!!!";
-  display: block;
   font-size: 0.9em;
   transform: translate(5em, 2em) rotate(10deg);
 }
