@@ -84,9 +84,9 @@ header .link-github {
         width: 7vw; 
         transform: translate(10.5vw, 3vw);
 
-        &:hover{
-            animation: christmas 3s infinite;
-        }
+    
+        animation: christmas 6s infinite;
+        
     }
     span{
         display: inline-grid;

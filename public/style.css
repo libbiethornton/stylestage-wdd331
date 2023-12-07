@@ -126,9 +126,7 @@ header .link-github svg {
   fill: #F2E8CF;
   width: 7vw;
   transform: translate(10.5vw, 3vw);
-}
-header .link-github svg:hover {
-  animation: christmas 3s infinite;
+  animation: christmas 6s infinite;
 }
 header .link-github span {
   display: inline-grid;
@@ -400,7 +398,6 @@ article .container, #styles .container {
 }
 #guidelines h3::after {
   content: " woah, text gradients!!!";
-  display: block;
   font-size: 0.9em;
   transform: translate(5em, 2em) rotate(10deg);
 }
