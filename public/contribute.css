@@ -274,17 +274,35 @@
     padding-top: 40px;
   }
 }
-@media screen and (min-width: 800px) and (max-width: 380px) {
+@media screen and (max-width: 600px) {
   #guidelines .container {
     background-color: #BC4749;
+    color: #F2E8CF;
+    height: 190vw;
+  }
+  #guidelines .container p {
+    margin: 0 auto;
+    font-size: 0.9rem;
+    width: 45ch;
+  }
+  #guidelines .container h3 {
+    font-size: 1rem;
+    margin: 10px auto;
+    transform: translate(15vw, -5vw) rotate(-7deg);
+  }
+  #guidelines .container .link-guidelines {
+    font-size: 1rem;
+    margin: 40px 20px;
+    color: #A7C957;
   }
 
   #contribute .container {
+    color: #F2E8CF;
     background-color: #386641;
   }
-
-  #guidlines, #contribute p {
-    margin: 10px;
-    font-size: 0.9rem;
+  #contribute .container p {
+    font-size: 1rem;
+    width: 44ch;
+    margin: 0 auto;
   }
 }

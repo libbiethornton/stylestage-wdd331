@@ -299,17 +299,36 @@
             }
         }
 
-        @media screen and (max-width: 380px ){
-            #guidelines .container{
-                background-color: $color-darkred;  
-            }
-            #contribute .container{
-                background-color: $color-darkgreen;
-            }
+}
 
-            #guidlines, #contribute p{
-                margin: 10px;
-                font-size: .9rem;
-            }
+@media screen and (max-width: 600px){
+    #guidelines .container{
+        background-color: $color-darkred;  
+        color:$color-cream;
+        height:190vw;
+        p{
+            margin: 0 auto;
+            font-size: .9rem;
+            width: 45ch;
         }
+        h3{
+            font-size: 1rem;
+            margin: 10px auto;
+            transform: translate(15vw,-5vw) rotate(-7deg);
+        }
+        .link-guidelines{
+            font-size: 1rem;
+            margin: 40px 20px;
+            color: $color-lightgreen;
+        }
+    }
+    #contribute .container{
+        color:$color-cream;
+        background-color: $color-darkgreen;
+        p{
+            font-size: 1rem;
+            width: 44ch;
+            margin: 0 auto;
+        }
+    }
 }
